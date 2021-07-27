@@ -1,0 +1,38 @@
+{
+  "name": "@landerqi/http",
+  "version": "0.0.1",
+  "description": "http 模块，基于axios / jsonp 封装请求方法",
+  "repository": "https://github.com/landerqi/http.git",
+  "author": "Lanerqi <landerqi@qq.com>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "axios",
+    "jsonp",
+    "http"
+  ],
+  "main": "dist/http.common.js",
+  "module": "dist/http.min.js",
+  "scripts": {
+    "build": "poi build",
+    "build:cjs": "cross-env FORMAT_ENV=cjs poi build",
+    "release": "node build/release.js"
+  },
+  "browserslist": [
+    "iOS >= 8",
+    "Android >= 4.4",
+    "IE >= 9"
+  ],
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "poi": "^10.2.10",
+    "shelljs": "^0.8.2",
+    "standard-version": "^4.4.0"
+  }
+}
